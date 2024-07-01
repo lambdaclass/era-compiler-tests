@@ -1,5 +1,5 @@
 //! { 
-//!     "targets": ["EraVM"],
+//!     "targets": ["EVMInterpreter"],
 //!     "cases": [ {
 //!     "name": "main",
 //!     "inputs": [
@@ -10,7 +10,7 @@
 //!         }
 //!     ],
 //!     "expected": [
-//!         "300"
+//!         "20000000"
 //!     ]
 //! } ] }
 
@@ -20,7 +20,7 @@ pragma solidity >=0.4.12;
 
 contract Test {
     function main() public returns(uint) {
-        uint block_number = block.number;
-        return block_number;
+        uint gas_limit = block.gaslimit;
+        return gas_limit;
     }
 }

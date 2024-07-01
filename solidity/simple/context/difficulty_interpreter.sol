@@ -1,5 +1,5 @@
 //! { 
-//!     "targets": ["EraVM"],
+//!     "targets": ["EVMInterpreter"],
 //!     "cases": [ {
 //!     "name": "main",
 //!     "inputs": [
@@ -10,7 +10,7 @@
 //!         }
 //!     ],
 //!     "expected": [
-//!         "300"
+//!         "0xa86c2e601b6c44eb4848f7d23d9df3113fbcac42041c49cbed5000cb4f118777"
 //!     ]
 //! } ] }
 
@@ -20,7 +20,7 @@ pragma solidity >=0.4.12;
 
 contract Test {
     function main() public returns(uint) {
-        uint block_number = block.number;
-        return block_number;
+        uint _difficulty = block.difficulty;
+        return _difficulty;
     }
 }

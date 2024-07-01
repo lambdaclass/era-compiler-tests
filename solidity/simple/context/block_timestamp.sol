@@ -1,4 +1,6 @@
-//! { "cases": [ {
+//! { 
+//!     "targets": ["EraVM"],
+//!     "cases": [ {
 //!     "name": "main",
 //!     "inputs": [
 //!         {
@@ -8,7 +10,7 @@
 //!         }
 //!     ],
 //!     "expected": [
-//!         "0xdeadbeef"
+//!         "40"
 //!     ]
 //! } ] }
 

@@ -1,5 +1,5 @@
 //! { 
-//!     "targets": ["EraVM"],
+//!     "targets": ["EVMInterpreter"],
 //!     "cases": [ {
 //!     "name": "main",
 //!     "inputs": [
@@ -10,7 +10,7 @@
 //!         }
 //!     ],
 //!     "expected": [
-//!         "300"
+//!         "1"
 //!     ]
 //! } ] }
 
