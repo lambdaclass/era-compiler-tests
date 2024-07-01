@@ -1,5 +1,5 @@
 //! { 
-//!     "targets": ["EraVM"],
+//!     "targets": ["EVMInterpreter"],
 //!     "cases": [ {
 //!     "name": "default",
 //!     "inputs": [
@@ -10,7 +10,7 @@
 //!         }
 //!     ],
 //!     "expected": [
-//!         "0x0000000000000000000000000000000000000000000000000000000000008001"
+//!         "1"
 //!     ]
 //! } ] }
 
@@ -21,7 +21,7 @@ pragma solidity >=0.4.16;
 contract Test {
     function main() external view returns(uint256 result) {
         assembly {
-            result := coinbase()
+            result := number()
         }
     }
 }

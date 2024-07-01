@@ -1,5 +1,5 @@
 //! { 
-//!     "targets": ["EraVM"],
+//!     "targets": ["EVMInterpreter"],
 //!     "cases": [ {
 //!     "name": "default",
 //!     "inputs": [
@@ -10,18 +10,18 @@
 //!         }
 //!     ],
 //!     "expected": [
-//!         "0x0000000000000000000000000000000000000000000000000000000000008001"
+//!         "1"
 //!     ]
 //! } ] }
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.4.16;
+pragma solidity >=0.5.14;
 
 contract Test {
     function main() external view returns(uint256 result) {
         assembly {
-            result := coinbase()
+            result := chainid()
         }
     }
 }
